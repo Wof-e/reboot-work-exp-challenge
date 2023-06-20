@@ -1,0 +1,22 @@
+bq_connection:
+  target: dev
+  outputs:
+    mock:
+      type: bigquery
+      method: oauth
+      database: innovation-nation-389906
+      schema: work_ref_ds
+      location: europe-west2
+      priority: interactive
+      timeout_seconds: 300
+      threads: 3
+
+    dev:
+      type: bigquery
+      method: oauth
+      database: innovation-nation-389906
+      schema: work_exp_ds
+      location: europe-west2
+      priority: interactive
+      timeout_seconds: 300
+      threads: 3

@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: work_ref
+    database: innovation-nation-389906
+    schema: work_ref_ds
+    tables:
+      - name: placement_data
+      - name: placement_format_metadata
+      - name: location_metadata
