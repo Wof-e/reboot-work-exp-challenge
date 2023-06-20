@@ -38,8 +38,10 @@ def fetch_placements(student_filter):
 
     placement_list =[]
     for row in query_job:
-        placement_list.append(Placement(row['company_name'],row['length_in_days'],row['location'],row['start_date'],row['job_family'],
-                            row['school_year_max'],row['school_year_min'])
+        print(row)
+        p = Placement(row['company_name'],row['length_in_days'],row['location'],row['start_date'],row['job_family'],
+                                        row['school_year_max'],row['school_year_min'])
+        placement_list.append(p)
 
     return placement_list
 
